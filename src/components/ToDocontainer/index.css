@@ -1,0 +1,311 @@
+.todo-list{
+    background-color: #3F4041;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    height: 168px;
+    width: 304px;
+    border-radius: 16px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+}
+@media screen and (max-width: 768px) and (orientation: portrait){
+    .todo-list{
+        width: 290px;
+    }
+}
+.todo-sub-container{
+    display: flex;
+    flex-direction: column;
+}
+.difficulty-options-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1px;
+    padding: 0px;
+    height: 23px;
+}
+.completed-task{
+    border: 1px solid #68B266;
+    padding: 0px 10px 2px 10px;
+    border-radius: 5px;
+}
+.completed{
+    color: #68B266;
+    font-weight: 500;
+    font-size: 12px;
+}
+.low-difficulty{
+    border: 1px solid #D58D49;
+    padding: 0px 10px 2px 10px;
+    border-radius: 5px;
+}
+.low-diff{
+    color: #D58D49;
+    font-weight: 500;
+    font-size: 12px;
+}
+.high-difficulty{
+    border: 1px solid #D8727D;
+    padding: 0px 10px 2px 10px;
+    border-radius: 5px;
+}
+.high-diff{
+    color: #D8727D;
+    font-weight: 500;
+    font-size: 12px;
+}
+.todo-list-details{
+    margin-top: 3px;
+    padding: 0px;
+}
+.title{
+    font-style: 'Inter';
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0px;
+}
+.description{
+    font-style: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    color: #ffffff;
+    margin: 0px;
+}
+.deadline{
+    color: #AAAAAA;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: 'Poppins';
+}
+.date{
+    color: #AAAAAA;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: 'Poppins';
+}
+.options-button{
+    background-color: transparent;
+    border-width: 0px;
+    cursor: pointer;
+}
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.drop-down-options{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+.dropdown-btn{
+    cursor: pointer;
+    background-color: transparent;
+    border-width: 1px;
+    border-color: #3F4041;
+    color: #ffffff;
+    font-style: 'Poppins';
+    margin-top: 0px;
+    z-index: 0;
+}
+.dropdown-btn:hover{
+    z-index: 1;
+}
+.dropdown-delete-btn{
+    cursor: pointer;
+    background-color: transparent;
+    border-width: 1px;
+    border-color: #3F4041;
+    color: #ffffff;
+    font-style: 'Poppins';
+    margin-top: 2px;
+    z-index: 0;
+}
+.dropdown-delete-btn:hover{
+    z-index: 1;
+}
+.add-task-popup-container{
+    z-index: 1;
+    height: 514px;
+    width: 333px;
+    padding: 20px 20px 0px 20px;
+    border-radius: 10px;
+    border: 1px solid #797979;
+    background-color: #292626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.popup-header-add-btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.popup-dot-heading{
+    display: flex;
+    flex-direction: row;
+}
+.popup-dot{
+    display: inline-block;
+    background-color: #20E7F4;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-right: 8px;
+}
+.popup-heading{
+    color: #ffffff;
+    font-style: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+}
+.add-icon-button{
+    height: 20px;
+    width: 20px;
+    border-radius: 15px;
+    padding: 2px;
+    text-align: center;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.popup-line{
+    border: 1px solid #E1E2EA;
+    margin-top: 1px;
+}
+.popup-task-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #3F4041;
+    width: 95%;
+    border-radius: 16px;
+    padding: 16px;
+}
+.input-fields{
+    background-color: transparent;
+    border-width: 0px;
+    outline: none;
+    width: 100%;
+    color: #ffffff;
+}
+.popup-line2{
+    border: 1px solid #000000;
+    margin-top: 1px;
+    margin-bottom: 6px;
+}
+.input-label{
+    color: #E0E0E0;
+    font-size: 12px;
+    font-style: 'Poppins';
+    font-weight: 500;
+    margin-right: 10px;
+}
+.select-input-field{
+    background-color: #3F4041;
+    margin-left: 10px;
+    color: #ffffff;
+    margin-bottom: 7px;
+    margin-top: 20px;
+}
+.date-input-field{
+    background-color: #292626;
+    color: #ffffff;
+}
+.close-btn{
+    align-self: center;
+    margin-top: 100px;
+    color: #20E7F4;
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    font-style: 'Poppins';
+    font-size: 20px;
+    font-weight: bold;
+}
+.task-added-popup-container{
+    background-color: #292626;
+    height: 227px;
+    width: 315px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 1px 2px 6px 0px #006EE94D;
+    padding: 20px;
+}
+.tick-container{
+    height: 83px;
+    width: 83px;
+    background-color: #8976E4;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.task-added-description{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: 'Poppins';
+}
+.back-btn{
+    background-color: #8976E4;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: 'Poppins';
+    width: 271px;
+    height: 48px;
+    padding: 10px;
+    cursor: pointer;
+}
+.delete-popup-container{
+    z-index: 1;
+    height: 150px;
+    width: 250px;
+    padding: 20px 20px 0px 20px;
+    border-radius: 10px;
+    border: 1px solid #797979;
+    background-color: #292626;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.delete-popup-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+}
+.delete-popup-close-btn{
+    background-color: transparent;
+    border: 1px solid #797979;
+    padding: 10px;
+    color: #ffffff;
+    font-style: 'Poppins';
+    cursor: pointer;
+    border-radius: 10px;
+}
+.delete-popup-delete-btn{
+    background-color: #8976E4;
+    padding: 10px;
+    text-align: center;
+    border-width: 0px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-style: 'Poppins';
+    cursor: pointer;
+}

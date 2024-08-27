@@ -36,3 +36,48 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  overflow: auto;
+}
+
+.main-container{
+  background-color: #292626;
+  padding: 50px 21px 18px 21px;
+  overflow: auto;
+  z-index: 0;
+}
+
+.sub-container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) and (orientation: portrait){
+  .sub-container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.todo-containers{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 668px;
+}
+@media screen and (max-width: 768px) and (orientation: portrait){
+  .todo-containers{
+    width: 100%;
+  }
+  .side-bar-containers{
+    width: 100%;
+  }
+}
+.side-bar-containers{
+  width: 20%;
+}
